@@ -9,22 +9,22 @@
 	<bean id="checker" class="com.doublechaintech.payment.PaymentChecker" scope="prototype"></bean>
 
 	<bean id="platformManagerBase" class="com.doublechaintech.payment.platform.PlatformManagerImpl"/>
-	<bean id="platformManager" class="com.doublechaintech.payment.platform.PlatformManagerImpl" parent="platformManagerBase" ></bean>
+	<bean id="platformManager" class="com.doublechaintech.payment.platform.PlatformCustomManagerImpl" parent="platformManagerBase" ></bean>
 	
 	<bean id="userDomainManagerBase" class="com.doublechaintech.payment.userdomain.UserDomainManagerImpl"/>
-	<bean id="userDomainManager" class="com.doublechaintech.payment.userdomain.UserDomainManagerImpl" parent="userDomainManagerBase" ></bean>
+	<bean id="userDomainManager" class="com.doublechaintech.payment.userdomain.UserDomainCustomManagerImpl" parent="userDomainManagerBase" ></bean>
 	
 	<bean id="userWhiteListManagerBase" class="com.doublechaintech.payment.userwhitelist.UserWhiteListManagerImpl"/>
 	<bean id="userWhiteListManager" class="com.doublechaintech.payment.userwhitelist.UserWhiteListManagerImpl" parent="userWhiteListManagerBase" ></bean>
 	
 	<bean id="secUserManagerBase" class="com.doublechaintech.payment.secuser.SecUserManagerImpl"/>
-	<bean id="secUserManager" class="com.doublechaintech.payment.secuser.SecUserManagerImpl" parent="secUserManagerBase" ></bean>
+	<bean id="secUserManager" class="com.doublechaintech.payment.secuser.SecUserCustomManagerImpl" parent="secUserManagerBase" ></bean>
 	
 	<bean id="secUserBlockingManagerBase" class="com.doublechaintech.payment.secuserblocking.SecUserBlockingManagerImpl"/>
-	<bean id="secUserBlockingManager" class="com.doublechaintech.payment.secuserblocking.SecUserBlockingManagerImpl" parent="secUserBlockingManagerBase" ></bean>
+	<bean id="secUserBlockingManager" class="com.doublechaintech.payment.secuserblocking.SecUserBlockingCustomManagerImpl" parent="secUserBlockingManagerBase" ></bean>
 	
 	<bean id="userAppManagerBase" class="com.doublechaintech.payment.userapp.UserAppManagerImpl"/>
-	<bean id="userAppManager" class="com.doublechaintech.payment.userapp.UserAppManagerImpl" parent="userAppManagerBase" ></bean>
+	<bean id="userAppManager" class="com.doublechaintech.payment.userapp.UserAppCustomManagerImpl" parent="userAppManagerBase" ></bean>
 	
 	<bean id="listAccessManagerBase" class="com.doublechaintech.payment.listaccess.ListAccessManagerImpl"/>
 	<bean id="listAccessManager" class="com.doublechaintech.payment.listaccess.ListAccessManagerImpl" parent="listAccessManagerBase" ></bean>
